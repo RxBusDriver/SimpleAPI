@@ -1,0 +1,6 @@
+framework module Pods_MartAPIMockupTests {
+  umbrella header "Pods-MartAPIMockupTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

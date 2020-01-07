@@ -10,15 +10,22 @@ import UIKit
 import RxCocoa
 import RxSwift
 
-class NetworkService {
+class ExchangeRateAPI {
+    static let shared = ExchangeRateAPI()
     private let session = URLSession.shared
+    
+    static let baseURL = "https://api.exchangerate-api.com/v4/latest/"
+    
+    static func url(for currency: CurrencyCode) -> String {
+        return "\(baseURL)\(currency.rawValue)"
+    }
     
     init() {
         
     }
     
     func getRates(for currency: CurrencyCode) -> Observable<Result<ResultData, ExchangeRateError>> {
-        let urlString = "https://api.exchangerate-api.com/v4/latest/USD"
+        let urlString = "https://api.exchangerate-api.com/v4/latest/\(currency.rawValue)"
         guard let url = URL(string: urlString) else {
             fatalError()
         }

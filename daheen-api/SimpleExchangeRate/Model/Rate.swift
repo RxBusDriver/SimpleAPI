@@ -12,4 +12,9 @@ import Foundation
 struct Rate {
     let code: String
     let rate: String
+    
+    init(code: String, rate: Double) {
+        self.code = code
+        self.rate = "\(rate)"
+    }
 }

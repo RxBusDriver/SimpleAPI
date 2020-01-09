@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,11 +11,11 @@
 		3E0E7FB123C7C48300A7FD46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0E7FB023C7C48300A7FD46 /* AppDelegate.swift */; };
 		3E0E7FB323C7C48300A7FD46 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0E7FB223C7C48300A7FD46 /* SceneDelegate.swift */; };
 		3E0E7FB523C7C48300A7FD46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0E7FB423C7C48300A7FD46 /* ViewController.swift */; };
-		3E0E7FB823C7C48300A7FD46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E0E7FB623C7C48300A7FD46 /* Main.storyboard */; };
 		3E0E7FBA23C7C48400A7FD46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E0E7FB923C7C48400A7FD46 /* Assets.xcassets */; };
 		3E0E7FBD23C7C48400A7FD46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E0E7FBB23C7C48400A7FD46 /* LaunchScreen.storyboard */; };
 		3E0E7FC823C7C48400A7FD46 /* RxListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0E7FC723C7C48400A7FD46 /* RxListTests.swift */; };
 		3E0E7FD323C7C48400A7FD46 /* RxListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0E7FD223C7C48400A7FD46 /* RxListUITests.swift */; };
+		3E0E7FE523C7CAA700A7FD46 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0E7FE423C7CAA700A7FD46 /* City.swift */; };
 		8B668D664737FB681BECC7B8 /* Pods_RxListUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6079E859B1DFC17CBA66E045 /* Pods_RxListUITests.framework */; };
 		FF9425D4A5A557538B5B4B6D /* Pods_RxListTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA97B2E87EE0D5D7C28F05EE /* Pods_RxListTests.framework */; };
 /* End PBXBuildFile section */
@@ -44,7 +44,6 @@
 		3E0E7FB023C7C48300A7FD46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E0E7FB223C7C48300A7FD46 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3E0E7FB423C7C48300A7FD46 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3E0E7FB723C7C48300A7FD46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3E0E7FB923C7C48400A7FD46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E0E7FBC23C7C48400A7FD46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E0E7FBE23C7C48400A7FD46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +53,7 @@
 		3E0E7FCE23C7C48400A7FD46 /* RxListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E0E7FD223C7C48400A7FD46 /* RxListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxListUITests.swift; sourceTree = "<group>"; };
 		3E0E7FD423C7C48400A7FD46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E0E7FE423C7CAA700A7FD46 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		42593DAAC2BF478DEA9FBCD5 /* Pods-RxListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxListTests.debug.xcconfig"; path = "Target Support Files/Pods-RxListTests/Pods-RxListTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4E6C69BFAE20EE8AB6539E60 /* Pods-RxList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxList.release.xcconfig"; path = "Target Support Files/Pods-RxList/Pods-RxList.release.xcconfig"; sourceTree = "<group>"; };
 		5A273E4C38C332CADE8F28EC /* Pods-RxListUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxListUITests.debug.xcconfig"; path = "Target Support Files/Pods-RxListUITests/Pods-RxListUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,13 +126,9 @@
 		3E0E7FAF23C7C48300A7FD46 /* RxList */ = {
 			isa = PBXGroup;
 			children = (
-				3E0E7FB023C7C48300A7FD46 /* AppDelegate.swift */,
-				3E0E7FB223C7C48300A7FD46 /* SceneDelegate.swift */,
-				3E0E7FB423C7C48300A7FD46 /* ViewController.swift */,
-				3E0E7FB623C7C48300A7FD46 /* Main.storyboard */,
-				3E0E7FB923C7C48400A7FD46 /* Assets.xcassets */,
-				3E0E7FBB23C7C48400A7FD46 /* LaunchScreen.storyboard */,
-				3E0E7FBE23C7C48400A7FD46 /* Info.plist */,
+				3E0E7FE323C7CA9800A7FD46 /* Model */,
+				3E0E7FE123C7CA8D00A7FD46 /* Views */,
+				3E0E7FE023C7C5E900A7FD46 /* Applications */,
 			);
 			path = RxList;
 			sourceTree = "<group>";
@@ -155,6 +151,34 @@
 			path = RxListUITests;
 			sourceTree = "<group>";
 		};
+		3E0E7FE023C7C5E900A7FD46 /* Applications */ = {
+			isa = PBXGroup;
+			children = (
+				3E0E7FB023C7C48300A7FD46 /* AppDelegate.swift */,
+				3E0E7FB223C7C48300A7FD46 /* SceneDelegate.swift */,
+				3E0E7FB923C7C48400A7FD46 /* Assets.xcassets */,
+				3E0E7FBB23C7C48400A7FD46 /* LaunchScreen.storyboard */,
+				3E0E7FBE23C7C48400A7FD46 /* Info.plist */,
+			);
+			path = Applications;
+			sourceTree = "<group>";
+		};
+		3E0E7FE123C7CA8D00A7FD46 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3E0E7FB423C7C48300A7FD46 /* ViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3E0E7FE323C7CA9800A7FD46 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3E0E7FE423C7CAA700A7FD46 /* City.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		8BCD1D58D98452F9441BE7C3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,7 +189,6 @@
 				5A273E4C38C332CADE8F28EC /* Pods-RxListUITests.debug.xcconfig */,
 				10C589D049DF88F51179049F /* Pods-RxListUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -279,7 +302,6 @@
 			files = (
 				3E0E7FBD23C7C48400A7FD46 /* LaunchScreen.storyboard in Resources */,
 				3E0E7FBA23C7C48400A7FD46 /* Assets.xcassets in Resources */,
-				3E0E7FB823C7C48300A7FD46 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +414,7 @@
 			files = (
 				3E0E7FB523C7C48300A7FD46 /* ViewController.swift in Sources */,
 				3E0E7FB123C7C48300A7FD46 /* AppDelegate.swift in Sources */,
+				3E0E7FE523C7CAA700A7FD46 /* City.swift in Sources */,
 				3E0E7FB323C7C48300A7FD46 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,14 +451,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3E0E7FB623C7C48300A7FD46 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3E0E7FB723C7C48300A7FD46 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3E0E7FBB23C7C48400A7FD46 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -568,7 +583,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 452DHHAC9T;
-				INFOPLIST_FILE = RxList/Info.plist;
+				INFOPLIST_FILE = RxList/Applications/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -587,7 +602,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 452DHHAC9T;
-				INFOPLIST_FILE = RxList/Info.plist;
+				INFOPLIST_FILE = RxList/Applications/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

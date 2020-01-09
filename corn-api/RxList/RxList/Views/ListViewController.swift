@@ -35,12 +35,17 @@ class ListViewController: UIViewController {
     // MARK: - Configure Views
     private func configureViews() {
         configureBaseView()
+        configureCell()
         configureTableView()
     }
     
     private func configureBaseView() {
         title = "Cities"
         view.backgroundColor = .white
+    }
+    
+    private func configureCell() {
+        tableView.register(UINib(nibName: CityCell.reusableIdentifier, bundle: nil), forCellReuseIdentifier: CityCell.reusableIdentifier)
     }
     
     private func configureTableView() {
@@ -54,11 +59,10 @@ class ListViewController: UIViewController {
     
     // MARK: - Fetch
     private func fetch() {
-        viewModel.fetchCityList().subscribe(onNext: { cities in
-            cities.forEach {
-                print("Country: \($0.country) City: \($0.city)")
-            }
-        }).disposed(by: disposeBag)
+        viewModel.fetchCityList().bind(to: tableView.rx.items(cellIdentifier: CityCell.reusableIdentifier, cellType: CityCell.self)) { _, city, cell in
+            cell.countryLabel.text = city.country
+            cell.capitalLabel.text = city.city
+        }.disposed(by: disposeBag)
     }
 }
 

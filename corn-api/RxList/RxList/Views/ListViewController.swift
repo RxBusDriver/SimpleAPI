@@ -15,6 +15,7 @@ class ListViewController: UIViewController {
     private let viewModel: ListViewModel
     private let disposeBag = DisposeBag()
     private let tableView = UITableView()
+    private let indicatorView = UIActivityIndicatorView(style: .large)
     
     init(viewModel: ListViewModel) {
         self.viewModel = viewModel
@@ -35,6 +36,7 @@ class ListViewController: UIViewController {
     // MARK: - Configure Views
     private func configureViews() {
         configureBaseView()
+        configureIndicatorView()
         configureCell()
         configureTableView()
     }
@@ -42,6 +44,13 @@ class ListViewController: UIViewController {
     private func configureBaseView() {
         title = "Cities"
         view.backgroundColor = .white
+    }
+    
+    private func configureIndicatorView() {
+        view.addSubview(indicatorView)
+        indicatorView.translatesAutoresizingMaskIntoConstraints = false
+        indicatorView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        indicatorView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     }
     
     private func configureCell() {
@@ -59,9 +68,17 @@ class ListViewController: UIViewController {
     
     // MARK: - Fetch
     private func fetch() {
-        viewModel.fetchCityList().bind(to: tableView.rx.items(cellIdentifier: CityCell.reusableIdentifier, cellType: CityCell.self)) { _, city, cell in
-            cell.countryLabel.text = city.country
-            cell.capitalLabel.text = city.city
+        viewModel.isLoading
+            .bind(to: indicatorView.rx.isAnimating)
+            .disposed(by: disposeBag)
+        viewModel.isLoading
+            .bind(to: tableView.rx.isHidden)
+            .disposed(by: disposeBag)
+        
+        viewModel.fetchCityList()
+            .bind(to: tableView.rx.items(cellIdentifier: CityCell.reusableIdentifier, cellType: CityCell.self)) { _, city, cell in
+                cell.countryLabel.text = city.country
+                cell.capitalLabel.text = city.city
         }.disposed(by: disposeBag)
     }
 }

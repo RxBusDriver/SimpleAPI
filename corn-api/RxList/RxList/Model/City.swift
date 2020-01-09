@@ -8,6 +8,10 @@
 
 import Foundation
 
+struct CityResponse: Decodable {
+    var cities: [City]
+}
+
 struct City: Decodable {
     var id: Int
     var country: String

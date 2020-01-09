@@ -13,6 +13,7 @@ import RxDataSources
 
 class ListViewController: UIViewController {
     private let viewModel: ListViewModel
+    private let disposeBag = DisposeBag()
     
     init(viewModel: ListViewModel) {
         self.viewModel = viewModel
@@ -26,6 +27,12 @@ class ListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        
+        viewModel.fetchCityList().subscribe(onNext: { cities in
+            cities.forEach {
+                print("Country: \($0.country) City: \($0.city)")
+            }
+        }).disposed(by: disposeBag)
     }
 }
 

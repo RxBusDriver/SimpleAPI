@@ -19,6 +19,7 @@
 		D802E6FA23BB338600317549 /* MartAPIMockupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D802E6F923BB338600317549 /* MartAPIMockupTests.swift */; };
 		D802E70523BB338600317549 /* MartAPIMockupUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D802E70423BB338600317549 /* MartAPIMockupUITests.swift */; };
 		D822E48823BB3492005AA08A /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = D822E48723BB3492005AA08A /* API.swift */; };
+		D82DDEBD23C33F960072F451 /* BranchRawData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82DDEBC23C33F960072F451 /* BranchRawData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		D802E70423BB338600317549 /* MartAPIMockupUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MartAPIMockupUITests.swift; sourceTree = "<group>"; };
 		D802E70623BB338600317549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D822E48723BB3492005AA08A /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		D82DDEBC23C33F960072F451 /* BranchRawData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchRawData.swift; sourceTree = "<group>"; };
 		ED872F42458ABA896D1DC7A2 /* Pods-MartAPIMockup-MartAPIMockupUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MartAPIMockup-MartAPIMockupUITests.release.xcconfig"; path = "Target Support Files/Pods-MartAPIMockup-MartAPIMockupUITests/Pods-MartAPIMockup-MartAPIMockupUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,6 +151,7 @@
 				D802E6EB23BB338600317549 /* Assets.xcassets */,
 				D802E6ED23BB338600317549 /* LaunchScreen.storyboard */,
 				D802E6F023BB338600317549 /* Info.plist */,
+				D82DDEBC23C33F960072F451 /* BranchRawData.swift */,
 			);
 			path = MartAPIMockup;
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D82DDEBD23C33F960072F451 /* BranchRawData.swift in Sources */,
 				D802E6E723BB338500317549 /* ViewController.swift in Sources */,
 				D802E6E323BB338500317549 /* AppDelegate.swift in Sources */,
 				D822E48823BB3492005AA08A /* API.swift in Sources */,

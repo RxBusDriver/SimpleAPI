@@ -8,6 +8,7 @@ target 'MartAPIMockup' do
   # Pods for MartAPIMockup
 
 	pod 'RxSwift'
+	pod 'RxCocoa'
 
   target 'MartAPIMockupTests' do
     inherit! :search_paths

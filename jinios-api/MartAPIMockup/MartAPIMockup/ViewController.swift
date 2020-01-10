@@ -21,11 +21,11 @@ class ViewController: UIViewController {
     
         let url = URL(string: "http://ec2-52-78-180-121.ap-northeast-2.compute.amazonaws.com/api/marts/types/costco")
         
-        let result = DataSetter.request(Branches.self, url: url!)
+        let result = DataSetter.request([BranchRawData].self, url: url!)
         
         result.subscribe(
             onNext: { branches in
-                let names = branches.data.map { $0.branchName }
+                let names = branches.map { $0.branchName }
                 
                 DispatchQueue.main.async {
                     self.presentAlert(title: "성공🔥", body: names.joined(separator: ","))

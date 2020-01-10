@@ -3,3 +3,5 @@
 
 ## How to?
 자신의 이름으로 폴더 생성 -> 그 안에 프로젝트 생성하여 넣기
+
+  - [dana repo](https://github.com/daheenallwhite/SimpleExchangeRate)

@@ -1,0 +1,6 @@
+framework module Pods_RxList {
+  umbrella header "Pods-RxList-umbrella.h"
+
+  export *
+  module * { export * }
+}
